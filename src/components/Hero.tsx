@@ -1,5 +1,5 @@
 import Image from "next/image";
-import headshot from "../../assets/headshot.jpg";
+import headshot from "../../assets/headshot.jpeg";
 import { SITE } from "@/lib/site";
 import { EHRS } from "@/data/content";
 import { ArrowUpRight, MedicalCross } from "./icons";
