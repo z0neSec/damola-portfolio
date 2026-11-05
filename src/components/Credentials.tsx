@@ -38,16 +38,29 @@ export default function Credentials() {
             </div>
           </article>
 
-          <article className="lift rv flex min-h-80 flex-[1_1_360px] flex-col justify-between gap-8 rounded-[28px] bg-accent p-10 text-white">
-            <span className={`${MONO_LABEL} tracking-[0.16em] text-[#E2F2EC]`}>hipaatraining.us · Sep 2026</span>
+          <a
+            href="/certificates/hipaa-training-certificate.pdf"
+            target="_blank"
+            rel="noopener"
+            className="lift rv flex min-h-80 flex-[1_1_360px] flex-col justify-between gap-8 rounded-[28px] bg-accent p-10 text-white no-underline"
+          >
+            <span className="flex items-center justify-between gap-3">
+              <span className={`${MONO_LABEL} tracking-[0.16em] text-[#E2F2EC]`}>hipaatraining.us · Sep 2026</span>
+              <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/15">
+                <svg className="arr" width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M3 9l6-6M4 3h5v5" stroke="#FFFFFF" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+            </span>
             <div className="flex flex-col gap-3">
               <h3 className="font-serif text-[40px] leading-[1.02] font-normal">HIPAA Compliance Training</h3>
               <span className="text-[15px] leading-[1.6] text-[#E2F2EC]">
                 Privacy Rule, Security Rule, Breach Notification and Enforcement. Valid through Sep 30, 2027.
               </span>
               <span className="font-mono text-[13px] text-white">ID HIPAA-0137935</span>
+              <span className="text-sm font-medium text-white">View certificate (PDF)</span>
             </div>
-          </article>
+          </a>
 
           {CERT_LINKS.map((c) => (
             <a

@@ -15,13 +15,7 @@ export default function Hero() {
       id="top"
       className="relative mx-auto flex max-w-[1320px] flex-wrap items-center gap-[clamp(48px,6vw,72px)] px-[clamp(20px,3vw,32px)] pt-[clamp(40px,6vw,72px)] pb-[clamp(72px,9vw,128px)]"
     >
-      <div className="relative z-[2] flex min-w-0 flex-[1_1_580px] flex-col gap-8">
-        <span
-          className="fade-up font-mono text-xs tracking-[0.18em] text-mint uppercase"
-          style={{ animationDelay: ".05s" }}
-        >
-          Medical Virtual Assistant · Remote
-        </span>
+      <div className="relative z-[2] flex min-w-0 flex-[1_1_580px] flex-col gap-8 min-[561px]:max-[1150px]:items-center min-[561px]:max-[1150px]:text-center">
         <h1 className="font-serif text-[clamp(46px,7vw,108px)] leading-[0.98] font-normal tracking-[-0.025em] text-cream">
           <span className="h-line block overflow-hidden pb-[0.08em]">
             <span style={{ animationDelay: ".1s" }}>Remote admin support</span>
@@ -40,7 +34,7 @@ export default function Hero() {
           remotely. Scheduling, intake, EHR documentation and patient communication, handled by someone who
           understands the medicine behind every message.
         </p>
-        <div className="fade-up flex flex-wrap gap-3" style={{ animationDelay: ".75s" }}>
+        <div className="fade-up flex flex-wrap gap-3 min-[561px]:max-[1150px]:justify-center" style={{ animationDelay: ".75s" }}>
           <a
             className="btn inline-flex min-h-[54px] items-center gap-2.5 rounded-full bg-cream px-7 text-base font-medium text-deep no-underline"
             href={`mailto:${SITE.email}`}
@@ -57,7 +51,7 @@ export default function Hero() {
           </a>
         </div>
         <div
-          className="fade-up flex flex-wrap items-center gap-x-[26px] gap-y-2.5 border-t border-cream/12 pt-7"
+          className="fade-up flex flex-wrap items-center gap-x-[26px] gap-y-2.5 border-t border-cream/12 pt-7 min-[561px]:max-[1150px]:w-full min-[561px]:max-[1150px]:justify-center"
           style={{ animationDelay: ".9s" }}
         >
           <span className="font-mono text-[11px] tracking-[0.16em] text-dim uppercase">Works in</span>
@@ -112,7 +106,7 @@ export default function Hero() {
         </div>
 
         {/* Floating: HIPAA */}
-        <div className="bob2 absolute top-[120px] right-0 flex items-center gap-3 rounded-full bg-cream py-3 pr-[18px] pl-3 text-deep shadow-[0_24px_50px_-20px_rgba(0,0,0,.55)]">
+        <div className="bob2 absolute top-[120px] right-0 flex max-[560px]:top-0 max-[560px]:origin-top-right max-[560px]:scale-[0.82] items-center gap-3 rounded-full bg-cream py-3 pr-[18px] pl-3 text-deep shadow-[0_24px_50px_-20px_rgba(0,0,0,.55)]">
           <span className="flex size-[38px] items-center justify-center rounded-full bg-deep">
             <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
               <path
